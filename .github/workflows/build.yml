@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: gradle/wrapper-validation-action@v1
-      - run: ./gradlew check build publishToMavenLocal --stacktrace --parallel
+      - run: ./gradlew
 #      - run: mkdir run && echo "eula=true" >> run/eula.txt
 #      - run: ./gradlew runAutoTestServer --stacktrace
       - uses: actions/upload-artifact@v2
